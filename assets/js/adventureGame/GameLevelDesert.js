@@ -14,17 +14,17 @@ class GameLevelDesert {
     let path = gameEnv.path;
 
     // Background data
-    const image_src_desert = path + "/images/gamify/desert.png"; // be sure to include the path
+    const image_src_desert = path + "/images/gamify/cyberpunk_background.jpg"; // be sure to include the path
     const image_data_desert = {
         name: 'desert',
-        greeting: "Welcome to the desert!  It is hot and dry here, but there are many adventures to be had!",
+        greeting: "Welcome to the destopia!  It is hot and dry here, but there are many adventures to be had!",
         src: image_src_desert,
         pixels: {height: 580, width: 1038}
     };
 
 
     // Player data for Chillguy
-    const sprite_src_chillguy = path + "/images/gamify/chillguy.png"; // be sure to include the path
+    const sprite_src_chillguy = path + "/images/gamify/chillguy2_480.png"; // be sure to include the path
     const CHILLGUY_SCALE_FACTOR = 5;
     const sprite_data_chillguy = {
         id: 'Chill Guy',
@@ -89,7 +89,7 @@ class GameLevelDesert {
 
 
       // NPC data for Octocat
-      const sprite_src_octocat = path + "/images/gamify/octocat.png"; // be sure to include the path
+      const sprite_src_octocat = path + "/images/gamify/demon.png"; // be sure to include the path
       const sprite_greet_octocat = "Hi I am Octocat! I am the GitHub code code code collaboration mascot";
       const sprite_data_octocat = {
         id: 'Octocat',
@@ -97,7 +97,7 @@ class GameLevelDesert {
         src: sprite_src_octocat,
         SCALE_FACTOR: 10,  // Adjust this based on your scaling needs
         ANIMATION_RATE: 50,
-        pixels: {height: 301, width: 801},
+        pixels: {height: 801, width: 801},
         INIT_POSITION: { x: (width / 4), y: (height / 4)},
         orientation: {rows: 1, columns: 4 },
         down: {row: 0, start: 0, columns: 3 },  // This is the stationary npc, down is default 
@@ -169,49 +169,26 @@ class GameLevelDesert {
     }
 
     // NPC Data for R2D2
-    const sprite_src_r2d2 = path + "/images/gamify/r2_idle.png"; // be sure to include the path
-    const sprite_greet_r2d2 = "Hi I am R2D2.  Leave this planet and help defent the rebel base on Hoth!";
-    const sprite_data_r2d2 = {
-      id: 'StarWarsR2D2',
-      greeting: sprite_greet_r2d2,
-      src: sprite_src_r2d2,
-      SCALE_FACTOR: 8,  // Adjust this based on your scaling needs
-      ANIMATION_RATE: 100,
-      pixels: {width: 505, height: 223},
-      INIT_POSITION: { x: (width * 1 / 4), y: (height * 3 / 4)}, // Adjusted position
-      orientation: {rows: 1, columns: 3 },
-      down: {row: 0, start: 0, columns: 3 },  // This is the stationary npc, down is default 
-      hitbox: { widthPercentage: 0.1, heightPercentage: 0.2 },
-      /* Reaction function
-      *  This function is called when the player interacts with the NPC
-      *  It displays an alert with the greeting message
-      */
-      reaction: function() {
-        alert(sprite_greet_r2d2);
-      },
-      /* Interact function
-      *  This function is called when the player interacts with the NPC
-      *  It pauses the main game, creates a new GameControl instance with the StarWars level,
-      */
-      interact: function() {
-        // Set a primary game reference from the game environment
-        let primaryGame = gameEnv.gameControl;
-        // Define the game in game level
-        let levelArray = [GameLevelStarWars];
-        // Define a new GameControl instance with the StarWars level
-        let gameInGame = new GameControl(path,levelArray);
-        // Pause the primary game 
-        primaryGame.pause();
-        // Start the game in game
-        gameInGame.start();
-        // Setup "callback" function to allow transition from game in gaame to the underlying game
-        gameInGame.gameOver = function() {
-          // Call .resume on primary game
-          primaryGame.resume();
-        }
-      }
+    const sprite_src_r2d2 = path + "/images/gamify/walkingboy.png"; // Ensure correct path
+const sprite_greet_r2d2 = "Hi I am R2D2. Leave this planet and help defend the rebel base on Hoth!";
 
-    };
+const sprite_data_r2d2 = {
+  id: 'StarWarsR2D2',
+  greeting: sprite_greet_r2d2,
+  src: sprite_src_r2d2,
+  SCALE_FACTOR: 5,  // Adjust this for proper scaling
+  ANIMATION_RATE: 100,
+  pixels: { width: 500, height: 500 },  // Fixed dimensions
+  INIT_POSITION: { x: (width * 1 / 4), y: (height * 3 / 4) }, // Adjusted position
+  orientation: { rows: 1, columns: 3 },
+  down: { row: 0, start: 0, columns: 3 },  // Fixed typo (columnss → columns)
+  hitbox: { widthPercentage: 0.1, heightPercentage: 0.2 },
+
+  /* Reaction function */
+  reaction: function() {
+    alert(sprite_greet_r2d2);
+  },
+}
 
     // List of objects defnitions for this level
     this.classes = [
