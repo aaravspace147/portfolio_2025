@@ -46,7 +46,7 @@ class GameLevelDesert {
 
 
     // NPC data for Tux 
-    const sprite_src_tux = path + "/images/gamify/tux.png"; // be sure to include the path
+    const sprite_src_tux = path + "/images/gamify/Untitled drawing.png"; // be sure to include the path
     const sprite_greet_tux = "Hi I am Tux, the Linux mascot.  I am very happy to spend some linux shell time with you!";
     const sprite_data_tux = {
         id: 'Tux',
@@ -89,7 +89,7 @@ class GameLevelDesert {
 
 
       // NPC data for Octocat
-      const sprite_src_octocat = path + "/images/gamify/Untitled drawing.png"; // be sure to include the path
+      const sprite_src_octocat = path + "/images/gamify/demon.png"; // be sure to include the path
       const sprite_greet_octocat = "Hi I am Octocat! I am the GitHub code code code collaboration mascot";
       const sprite_data_octocat = {
         id: 'Octocat',
