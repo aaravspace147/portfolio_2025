@@ -146,16 +146,16 @@ class GameLevelDesert {
       quiz: { 
         title: "Jupyter Notebook Command Quiz",
         questions: [
-          "Which shortcut is used to run a cell in Jupyter Notebook?\n1. Shift + Enter\n2. Ctrl + Enter\n3. Alt + Enter\n4. Tab + Enter",
-          "Which shortcut adds a new cell above the current cell?\n1. A\n2. B\n3. C\n4. D",
-          "Which shortcut adds a new cell below the current cell?\n1. B\n2. A\n3. C\n4. D",
-          "Which shortcut changes a cell to Markdown format?\n1. M\n2. Y\n3. R\n4. K",
-          "Which shortcut changes a cell to Code format?\n1. Y\n2. M\n3. C\n4. D",
-          "Which shortcut deletes the current cell?\n1. D, D\n2. X\n3. Del\n4. Ctrl + D",
-          "Which shortcut saves the current notebook?\n1. Ctrl + S\n2. Alt + S\n3. Shift + S\n4. Tab + S",
-          "Which shortcut restarts the kernel?\n1. 0, 0\n2. R, R\n3. K, K\n4. Shift + R",
-          "Which shortcut interrupts the kernel?\n1. I, I\n2. Ctrl + C\n3. Shift + I\n4. Alt + I",
-          "Which shortcut toggles line numbers in a cell?\n1. L\n2. N\n3. T\n4. G"
+          "Which shortcut is used to execute a command in the Resistance’s encrypted terminal?\n1. Shift + Enter\n2. Ctrl + Enter\n3. Alt + Enter\n4. Tab + Enter",
+          "Which shortcut deploys a new command module above the current one?\n1. A\n2. B\n3. C\n4. D",
+          "Which shortcut deploys a new command module below the current one?\n1. B\n2. A\n3. C\n4. D",
+          "Which shortcut encodes the current transmission into ciphered text?\n1. M\n2. Y\n3. R\n4. K",
+          "Which shortcut switches the terminal back to raw command mode?\n1. Y\n2. M\n3. C\n4. D",
+          "Which shortcut purges the active module from the Resistance’s system?\n1. D, D\n2. X\n3. Del\n4. Ctrl + D",
+          "Which shortcut archives the Resistance’s current findings?\n1. Ctrl + S\n2. Alt + S\n3. Shift + S\n4. Tab + S",
+          "Which shortcut initiates a full system reboot?\n1. 0, 0\n2. R, R\n3. K, K\n4. Shift + R",
+          "Which shortcut sends an emergency signal to halt the mainframe?\n1. I, I\n2. Ctrl + C\n3. Shift + I\n4. Alt + I",
+          "Which shortcut reveals the hidden sequence markers in encrypted logs?\n1. L\n2. N\n3. T\n4. G"
         ] 
       },
       reaction: function() {
