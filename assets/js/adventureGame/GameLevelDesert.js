@@ -63,16 +63,16 @@ class GameLevelDesert {
         quiz: { 
           title: "Linux Command Quiz",
           questions: [
-            "Which command is used to list files in a directory?\n1. ls\n2. dir\n3. list\n4. show",
-            "Which command is used to change directories?\n1. cd\n2. chdir\n3. changedir\n4. changedirectory",
-            "Which command is used to create a new directory?\n1. mkdir\n2. newdir\n3. createdir\n4. makedir",
-            "Which command is used to remove a file?\n1. rm\n2. remove\n3. delete\n4. erase",
-            "Which command is used to remove a directory?\n1. rmdir\n2. removedir\n3. deletedir\n4. erasedir",
-            "Which command is used to copy files?\n1. cp\n2. copy\n3. duplicate\n4. xerox",
-            "Which command is used to move files?\n1. mv\n2. move\n3. transfer\n4. relocate",
-            "Which command is used to view a file?\n1. cat\n2. view\n3. show\n4. display",
-            "Which command is used to search for text in a file?\n1. grep\n2. search\n3. find\n4. locate",
-            "Which command is used to view the contents of a file?\n1. less\n2. more\n3. view\n4. cat" 
+            "Which command is used to scan the archives of the Fallen Civilization?\n1. ls\n2. dir\n3. list\n4. show",
+            "Which command is used to traverse the ruins of the Old World?\n1. cd\n2. chdir\n3. changedir\n4. changedirectory",
+            "Which command is used to establish a new outpost for the Resistance?\n1. mkdir\n2. newdir\n3. createdir\n4. makedir",
+            "Which command is used to erase a classified document before it falls into enemy hands?\n1. rm\n2. remove\n3. delete\n4. erase",
+            "Which command is used to dismantle an abandoned stronghold?\n1. rmdir\n2. removedir\n3. deletedir\n4. erasedir",
+            "Which command is used to duplicate encrypted data before transmission?\n1. cp\n2. copy\n3. duplicate\n4. xerox",
+            "Which command is used to transfer sensitive files to a secure vault?\n1. mv\n2. move\n3. transfer\n4. relocate",
+            "Which command is used to decrypt and reveal the contents of a lost manuscript?\n1. cat\n2. view\n3. show\n4. display",
+            "Which command is used to uncover hidden messages buried within ancient texts?\n1. grep\n2. search\n3. find\n4. locate",
+            "Which command is used to access fragments of the Forbidden Knowledge?\n1. less\n2. more\n3. view\n4. cat" 
           ] 
         },
         reaction: function() {
@@ -104,7 +104,7 @@ class GameLevelDesert {
         hitbox: { widthPercentage: 0.1, heightPercentage: 0.1 },
         // GitHub command quiz 
         quiz: { 
-          title: "GitHub Command Quiz",
+          title: "Dystopian Git Command Quiz",
           questions: [
             "Which command is used to replicate the encrypted archives of the Resistance?\n1. git clone\n2. git fork\n3. git copy\n4. git download",
             "Which command is used to mark data for synchronization with the Rebellion’s central server?\n1. git add\n2. git stage\n3. git commit\n4. git push",
